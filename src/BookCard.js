@@ -1,20 +1,22 @@
 import React from 'react';
 
 const BookCard = (props) => {
-    return(
-       <div className="card-container">
-           <a href={props.link} target="_blank"><img src={props.image} alt=""/>
-           <div className="desc">
-               <h2>{props.title}</h2>
-               <h3>Author: {props.author}</h3>
-               <p>Published Date: {props.published === '0000'? 'Not Available': props.published.substring(0,4)}</p>
-               
-           </div></a>
 
-       </div>
+    return(
+        <div className="card-container">
+            <a href={props.link} target="_blank"  rel="noreferrer">
+                <img src={props.image} alt=""/>
+                <div className="desc">
+                    <h2>{props.title}</h2>
+                    <h3>Author: {props.author}</h3>
+                    <p>Published Date: {props.published === '0000'? 'Not Available': props.published.substring(0,4)}</p>
+                </div>
+            </a>
+        </div>
+        
 
     )
-
-    }
+    
+}
 
 export default BookCard;

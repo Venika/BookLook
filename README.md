@@ -4,9 +4,6 @@ Booklook is a web app that uses Google books API to allow users to search for a 
 # Development
 I used create-react-app to bootstrap the base app creation. Then I used Google books API to return the books relating to user's search query. To make app a bit more refined, I created a landing page and then, used the react-router-dom to go from landing page to search page.
 
-# Demo
-To try the booklook app, just visit this link- https://booklook-webapp.herokuapp.com/
-
 # Screenshots
 <img src="image/SS1.png" width="850" />  
        
